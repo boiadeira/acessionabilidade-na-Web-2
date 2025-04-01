@@ -3,6 +3,10 @@
 
 :root {
     --laranja-claro: #FF862A;
+    --auto-contraste-fundo:#000000;
+    --auto-contraste-texto:#FFFFFF;
+    --auto-contraste-link:#FFD700;
+    
 }
 
 body {
