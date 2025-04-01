@@ -173,3 +173,12 @@ h2 {
     background-color: var(--auto-contraste-fundo);
     color: var(--auto-contraste-texto);
 }
+.auto-contraste .nav.link{
+    color: var(--auto-contraste-link);
+}
+.auto-contraste .botao-inicio,
+.auto-contraste .formulario button,
+.auto-contraste .btn-primary{
+    background-color: var(--auto-contraste-link);
+    color: var(--auto-contraste-fundo);
+}
