@@ -182,3 +182,12 @@ h2 {
     background-color: var(--auto-contraste-link);
     color: var(--auto-contraste-fundo);
 }
+.auto-contraste #tropicalia{
+    background: none;
+}
+.auto-contraste #galeria{
+    background-color: var(--auto-contraste-fundo);
+}
+.auto-contraste .fundo-galeria{
+    background: none;
+}
