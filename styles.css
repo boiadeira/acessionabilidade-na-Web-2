@@ -170,5 +170,6 @@ h2 {
 .auto-contraste header;
 .auto-contraste footer;
 .auto-contraste .formulorio{
-    
+    background-color: var(--auto-contraste-fundo);
+    color: var(--auto-contraste-texto);
 }
