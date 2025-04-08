@@ -173,10 +173,10 @@ h2 {
     color: var(--auto-contraste-texto);
 }
 
-.auto-contraste header
-.auto-contraste footer
+.auto-contraste header,
+.auto-contraste footer,
 
-.auto-contraste .formulorio {
+.auto-contraste .formulario {
     background-color: var(--auto-contraste-fundo);
     color: var(--auto-contraste-texto);
 }
