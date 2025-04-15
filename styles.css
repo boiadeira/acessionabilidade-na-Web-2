@@ -3,9 +3,9 @@
 
 :root {
     --laranja-claro: #FF862A;
-    --auto-contraste-fundo: #000000;
-    --auto-contraste-texto: #FFFFFF;
-    --auto-contraste-link: #FFD700;
+    --auto-fundo: #000000;
+    --auto-texto: #ffffff;
+    --auto-link: #FFD700;
 
 }
 
@@ -49,7 +49,7 @@ section {
     top: 18rem;
     width: 45rem;
     height: auto;
-}￼
+}
 
 
 .esquerda-conteudo {
@@ -65,9 +65,7 @@ section {
     border-radius: 30px;
     border: none;
     width: 14em;
-    /* Convertido para em aumenta o tamanho da fonte por tabela*/
     height: 3em;
-    /* Convertido para em */
     align-content: center;
 
 }
@@ -140,12 +138,11 @@ h2 {
     font-weight: bold;
 }
 
-/* chama classe do bootstrap para modificar a cor */
 .form-control {
     background-color: #F1EDEF;
 }
 
-.menu-acessbilidade {
+.menu-acessibilidade {
     position: fixed;
     top: 2rem;
     right: 20px;
@@ -154,7 +151,7 @@ h2 {
 
 .rotacao-botao {
     transform: rotate(-90deg);
-    transition: right center;
+    transform-origin: right center;
 }
 
 .opcoes-acessibilidade {
@@ -163,43 +160,49 @@ h2 {
     flex-direction: column;
 }
 
+.opcoes-acessibilidade button {
+    margin-bottom: 5px;
+}
+
 .apresenta-lista {
     display: none;
+}
+
+.auto-contraste {
+
+    background-color: var(--auto-fundo);
+    color: var(--auto-texto);
 
 }
 
 .auto-contraste {
-    background-color: var(--auto-contraste-fundo);
-    color: var(--auto-contraste-texto);
+
+    .auto-contraste header,
+    .auto-contraste footer,
+    .auto-contraste .formulario {
+        background-color: var(--auto-fundo);
+        color: var(--auto-texto);
+    }
+}
+.auto-contraste .nav-link{
+    color: var(--auto-link);
 }
 
-.auto-contraste header,
-.auto-contraste footer,
-
-.auto-contraste .formulario {
-    background-color: var(--auto-contraste-fundo);
-    color: var(--auto-contraste-texto);
-}
-
-.auto-contraste .nav.link {
-    color: var(--auto-contraste-link);
-}
-
-.auto-contraste .botao-inicio,
+.auto-contraste.botao-inicio,
 .auto-contraste .formulario button,
-.auto-contraste .btn-primary {
-    background-color: var(--auto-contraste-link);
-    color: var(--auto-contraste-fundo);
+.auto-contraste .btn-primary{
+    background-color: var(--auto-link);
+    color: var(--auto-fundo);
 }
-
-.auto-contraste #tropicalia {
+.auto-contraste #tropicalia{
     background: none;
-}
 
-.auto-contraste #galeria {
-    background-color: var(--auto-contraste-fundo);
 }
-
-.auto-contraste .fundo-galeria {
+.auto-contraste #galeria{
+    background-color: var(--auto-fundo);
+}
+.auto-contraste .fundo-galeria{
+    
     background: none;
+
 }
